@@ -68,21 +68,43 @@
             <p class="text-xl md:text-2xl mb-8">Convenient, reliable, and professional bike and car servicing, right where you are in Pune.</p>
             <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Book a Service Now</a>
         </div>
-    </section>
-      <div>
+        <div>
         <img src="https://www.shutterstock.com/shutterstock/photos/2362447423/display_1500/stock-photo-foreman-in-service-repair-center-diagnoses-parts-on-motorcycle-service-and-warranty-service-of-2362447423.jpg"
              alt="Devices showing responsive design"
              class="right-float-img"width="300">
 
      
     </div>
-             <div>
-          <img src="bike.jpg"
-             alt="Devices showing responsive design"
-             class="left-float-img"width="300">
+        <div>
+            <style>
+        .center-container {
+            text-align: center; /* Centers inline-level content horizontally */
+            border: 1px dashed #ccc; /* Just for visualization */
+            padding: 20px;
+        }
 
-     
+        .center-container img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Center Image with text-align</h1>
+
+    <div class="center-container">
+        <img src="https://wheelforcecentre.com/wp-content/uploads/2022/10/Where-I-can-find-best-luxury-car-repair-services.jpg" >
     </div>
+
+    <p>This image is centered because its parent div has `text-align: center;` applied.</p>
+
+</body>
+        </div>
+                       
+    </section>
+     
        <section id="services" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Our Services</h2>
@@ -249,10 +271,5 @@
 
      
     </div>
-             <div>
-          <img src="bike.jpg"
-             alt="Devices showing responsive design"
-             class="left-float-img"width="300">
-
 
 </html>
