@@ -92,39 +92,53 @@
                        
     </section>
     <section>
-          <div>
-        <img src="https://images.tv9hindi.com/wp-content/uploads/2024/04/bike-service.jpg?w=1280"
-             alt="Devices showing responsive design"
-             class="right-float-img"width="400">
-
-     
-    </div>
-          <div>
-            <style>
-        .center-container {
-            text-align: "center"; /* Centers inline-level content horizontally */
-         
-            padding: 20px;
-        }
-
-        .center-container img {
-            max-width: 100%; /* Make image responsive */
-            height: auto;
-            border-radius: 8px;
+          <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/slider.css">
+    <style>
+        /* Optional: Add some space between sliders for better visual separation */
+        .slider-wrapper {
+            margin-bottom: 50px; /* Space between each slider */
         }
     </style>
 </head>
-             
-<body> 
+<body>
 
-    <div class="center-container">
-        <img src="https://wheelforcecentre.com/wp-content/uploads/2022/10/Where-I-can-find-best-luxury-car-repair-services.jpg" >
-    </div>
+    <header class="page-header">
+        
+    </header>
 
- 
+    <main class="main-content">
 
+        <section class="slider-section">
+            <div id="natureSlider" class="slider-wrapper" aria-roledescription="carousel" aria-label="Nature Image Gallery">
+                <div class="slider-track">
+                    <img src="https://5.imimg.com/data5/XM/BH/LN/SELLER-38802900/yamaha-bike-repairing-services.png" alt="A breathtaking mountain landscape." class="slider-image">
+                    <img src="https://img1.wsimg.com/isteam/ip/89b284c1-91d6-451e-a493-9b63171cfc6e/1000082903.jpg/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:600,h:300,cg:true" alt="A calm forest lake reflecting trees." class="slider-image">
+                    <img src="https://img.freepik.com/premium-photo/hand-auto-mechanic-using-wrench-repairing-car-problem_619210-770.jpg?semt=ais_items_boosted&w=740" alt="Golden sunset over a field of flowers." class="slider-image">
+                    <img src="https://images.overdrive.in/wp-content/odgallery/2022/08/63809_2022_Royal_Enfield_Hunter_350_468x263.jpg" alt="A majestic waterfall cascading down rocks." class="slider-image">
+                </div>
+
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn" aria-label="Previous image">&lt;</button>
+                    <button class="slider-btn next-btn" aria-label="Next image">&gt;</button>
+                </div>
+
+                <div class="slider-pagination">
+                    </div>
+
+                <div class="slider-timer">
+                    <div class="slider-progress-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="scripts/slider.js"></script>
 </body>
-        </div>
         </section>
      
        <section id="services" class="py-16 bg-white">
