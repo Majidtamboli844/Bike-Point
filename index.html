@@ -7,6 +7,60 @@
     <title>Aone Hospitality Services</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        // JavaScript for Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Back to Top Button visibility
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smooth scroll for back to top button
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+
+                if (targetElement) {
+                    // Adjust scroll position to account for fixed header
+                    const headerOffset = 64; // Approximate height of the header
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
      <style>
    .whatsapp_float{
             position:fixed;
